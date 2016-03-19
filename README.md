@@ -16,7 +16,7 @@ I will be following TDD approach, where I write the test first, and then write t
 - Follow the AAA rule for EACH test
 - [x] Arrange
 - [x] Act
-- [x] Assert (assert only one set of actions)
+- [x] Assert (assert only one set of actions) 
 
 - `t.Error()` = `t.Log()`+`t.Fail()`
 - `go test` //for normal testing in the current dir
