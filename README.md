@@ -22,3 +22,4 @@ I will be following TDD approach, where I write the test first, and then write t
 - `go test` //for normal testing in the current dir
 - `go test <package_name>` // to test the package
 - `go test -cover` //to see test coverage
+- `go test -coverageprofile=coverage.out; go tool cover -html=coverage.out` //this will open a html in browser with showing which lines of code are covered in green (and not covered with red)

@@ -1,0 +1,6 @@
+mode: set
+github.com/gunjan5/go-test-driven-development/BasicTests/math.go:4.24,7.17 2 1
+github.com/gunjan5/go-test-driven-development/BasicTests/math.go:11.2,11.22 1 1
+github.com/gunjan5/go-test-driven-development/BasicTests/math.go:14.2,14.12 1 1
+github.com/gunjan5/go-test-driven-development/BasicTests/math.go:7.17,10.3 2 0
+github.com/gunjan5/go-test-driven-development/BasicTests/math.go:11.22,13.3 1 1
