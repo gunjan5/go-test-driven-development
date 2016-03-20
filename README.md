@@ -1,8 +1,6 @@
-# go-test-driven-development
+# Test Driven Development (TDD) with Go :raised_hands:
 Test Driven Development with Golang
-
-Reference repo for Go TDD
-
+I will be following TDD approach, where I write the test first, and then write the main code to make it pass eventually
 
 ### Naming conventions:
 - Test file: xxx_test.go
@@ -10,7 +8,7 @@ Reference repo for Go TDD
 - Benchmark: BenchmarkXxx
 - Example  : ExampleXxx
 
-I will be following TDD approach, where I write the test first, and then write the main code to make it pass eventually
+
 
 ### Tips:
 - Follow the AAA rule for EACH test
@@ -26,6 +24,9 @@ I will be following TDD approach, where I write the test first, and then write t
 - `go test` //for normal testing in the current dir
 - `go test -v` //for verbose output
 - `go test <package_name>` // to test the package
+- `go test -run <func_name>` //to run tests only on a specific function instead of the whole file
+- `go test -timeout <duration>` //times out & panics the test if not finished in the specified timeout i.e. 2s, 1m, etc.
+- `go test -v -short`//Skip some long running tests (Goes with `if testing.Short(){t.Skip("Skipping")}` in the Test func)
 
 ### Coverage:
 - `go test -cover` //to see test coverage
