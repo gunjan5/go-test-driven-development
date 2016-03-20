@@ -16,9 +16,10 @@ I will be following TDD approach, where I write the test first, and then write t
 - Follow the AAA rule for EACH test
 - [x] Arrange
 - [x] Act
-- [x] Assert (assert only one set of actions) 
+- [x] Assert (assert only one set of actions)
 
-- `t.Error()` = `t.Log()`+`t.Fail()`
+- `t.Error()` = `t.Log()`+`t.Fail()` //t.Fail() fails the current test but continues with rest of the tests
+- `t.Fatal()` = `t.Log()`+`t.FailNow()` // t.Fatal() and t.FailNow() fails & stops ALL the tests 
 - `go test` //for normal testing in the current dir
 - `go test <package_name>` // to test the package
 - `go test -cover` //to see test coverage
