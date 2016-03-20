@@ -14,9 +14,9 @@ I will be following TDD approach, where I write the test first, and then write t
 
 ### Tips:
 - Follow the AAA rule for EACH test
-- [x] Arrange
-- [x] Act
-- [x] Assert (assert only one set of actions)
+  - [x] Arrange
+  - [x] Act
+  - [x] Assert (assert only one set of actions)
 
 ## Notes:
 - `t.Error()` = `t.Log()`+`t.Fail()` //t.Fail() fails the current test but continues with rest of the tests
