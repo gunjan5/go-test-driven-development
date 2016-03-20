@@ -15,6 +15,7 @@ I will be following TDD approach, where I write the test first, and then write t
   - [x] Arrange
   - [x] Act
   - [x] Assert (assert only one set of actions)
+- DRY (Don't Repeat Yourself) also applies to Tests 
 
 ## Notes:
 - `t.Error()` = `t.Log()`+`t.Fail()` //t.Fail() fails the current test but continues with rest of the tests
