@@ -3,7 +3,18 @@ package pack
 import (
 	"testing"
 	"time"
+	"os"
+	//"fmt"
 )
+
+
+func TestMain(m *testing.M)  {
+	println("...setup goes here...")
+	result:= m.Run()
+	println("...teardown goes here...")
+	os.Exit(result)
+
+}
 
 func TestCanAddNumbers(t *testing.T) {
 	t.Parallel() //to indicate that this test can be run in parallel with other tests that indicate the same

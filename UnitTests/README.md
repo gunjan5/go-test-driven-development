@@ -25,6 +25,11 @@ github.com/gunjan5/go-test-driven-development/BasicTests/math.go:11.22,13.3 1 1
 
 
 ## Short:
+```go
+if testing.Short() {
+  t.Skip("Skipping long test because short flag is enabled")
+}
+```
 ```bash
 $ go test -v -short
 === RUN   TestCanAddNumbers
@@ -65,4 +70,28 @@ $ go test -v
 	math_test.go:41: so you want me to talk more???...
 PASS
 ok  	github.com/gunjan5/go-test-driven-development/BasicTests	1.008s
+```
+
+## Custom Test runner (notice setup and teardown):
+```go
+func TestMain(m *testing.M)  {
+	println("...setup goes here...")
+	result:= m.Run()
+	println("...teardown goes here...")
+	os.Exit(result)
+}
+```
+```bash
+$ go test -v
+...setup goes here...
+=== RUN   TestCanAddNumbers
+=== RUN   TestCanAddMultipleNumbers
+=== RUN   TestCanSubNumbers
+--- PASS: TestCanAddMultipleNumbers (1.00s)
+--- PASS: TestCanAddNumbers (1.00s)
+--- PASS: TestCanSubNumbers (1.00s)
+	math_test.go:52: so you want me to talk more???...
+PASS
+...teardown goes here...
+ok  	github.com/gunjan5/go-test-driven-development/BasicTests	1.007s
 ```
