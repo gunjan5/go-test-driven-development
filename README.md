@@ -31,7 +31,7 @@ I will be following TDD approach, where I write the test first, and then write t
 
 ### Coverage:
 - `go test -cover` //to see test coverage
-- `go test -coverageprofile=coverage.out; go tool cover -html=coverage.out` //this will open a html in browser with showing which lines of code are covered in green (and not covered with red) (sample image below)
+- `go test -coverprofile=coverage.out; go tool cover -html=coverage.out` //this will open a html in browser with showing which lines of code are covered in green (and not covered with red) (sample image below)
 
 ![Code coverage html image](https://raw.githubusercontent.com/gunjan5/go-test-driven-development/master/coverage_html.png?token=AFsMeNKyNVWefbQsy2IorN14XmkzgnUSks5W94VSwA%3D%3D)
 

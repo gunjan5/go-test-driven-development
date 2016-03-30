@@ -13,7 +13,7 @@ ok  	github.com/gunjan5/go-test-driven-development/BasicTests	0.005s
 ## HTML Cool output from `coverage.out` file: (`go tool cover -html=coverage.out`)
 ![Code coverage html image](https://raw.githubusercontent.com/gunjan5/go-test-driven-development/master/coverage_html.png?token=AFsMeNKyNVWefbQsy2IorN14XmkzgnUSks5W94VSwA%3D%3D)
 
-## Coverage.out: (`go test -coverageprofile=coverage.out`)
+## Coverage.out: (`go test -coverprofile=coverage.out`)
 ```bash
 mode: set
 github.com/gunjan5/go-test-driven-development/BasicTests/math.go:4.24,7.17 2 1
