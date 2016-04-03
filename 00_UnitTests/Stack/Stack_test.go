@@ -5,7 +5,7 @@ import (
 )
 
 func TestStackIsEmpty(t *testing.T) {
-	var s Stack
+	s := NewStack()
 
 	if s.isEmpty() != true {
 		t.Error("Stack is empty")
@@ -14,7 +14,7 @@ func TestStackIsEmpty(t *testing.T) {
 }
 
 func TestStackPush(t *testing.T) {
-	var s Stack
+	s := NewStack()
 
 	if s.isEmpty() != true {
 		t.Error("Stack is empty, but it's returning not-empty")
@@ -32,7 +32,7 @@ func TestStackPush(t *testing.T) {
 }
 
 func TestStackSize(t *testing.T) {
-	var s Stack
+	s := NewStack()
 
 	result := s.Size()
 	if result != 0 {
@@ -48,7 +48,7 @@ func TestStackSize(t *testing.T) {
 }
 
 func TestStackPop(t *testing.T) {
-	var s Stack
+	s := NewStack()
 
 	s.Push("aaa")
 

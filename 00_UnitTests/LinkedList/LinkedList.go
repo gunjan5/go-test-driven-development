@@ -15,6 +15,11 @@ type Node struct {
 	Prev  *Node
 }
 
+func NewList() *LinkedList {
+	return &LinkedList{}
+
+}
+
 func (l *LinkedList) String() string {
 	s := ""
 	for n := l.Head; n != nil; n = n.Next {

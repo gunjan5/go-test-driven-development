@@ -6,7 +6,7 @@ import (
 )
 
 func TestPushFront(t *testing.T) {
-	var l LinkedList
+	l := NewList()
 
 	l.PushFront(-2)
 	t.Log(l.String())
@@ -22,7 +22,7 @@ func TestPushFront(t *testing.T) {
 }
 
 func TestPushBack(t *testing.T) {
-	var l LinkedList
+	l := NewList()
 
 	l.PushBack(-2)
 	t.Log(l.String())
@@ -38,7 +38,7 @@ func TestPushBack(t *testing.T) {
 }
 
 func TestInsertBefore(t *testing.T) {
-	var l LinkedList
+	l := NewList()
 
 	e1 := l.PushFront(1)
 	e3 := l.PushBack(3)
@@ -53,7 +53,7 @@ func TestInsertBefore(t *testing.T) {
 }
 
 func TestInsertAfter(t *testing.T) {
-	var l LinkedList
+	l := NewList()
 
 	e1 := l.PushFront(1)
 	e3 := l.PushBack(3)
@@ -68,7 +68,7 @@ func TestInsertAfter(t *testing.T) {
 }
 
 func TestSearch(t *testing.T) {
-	var l LinkedList
+	l := NewList()
 
 	for i := 0; i < 10; i++ {
 		l.PushBack(i)
@@ -84,7 +84,7 @@ func TestSearch(t *testing.T) {
 }
 
 func TestDeleteValue(t *testing.T) {
-	var l LinkedList
+	l := NewList()
 
 	for i := 0; i < 10; i++ {
 		l.PushBack(i)
@@ -100,7 +100,7 @@ func TestDeleteValue(t *testing.T) {
 }
 
 func TestDeleteElement(t *testing.T) {
-	var l LinkedList
+	l := NewList()
 
 	e1 := l.PushFront(1)
 	e2 := l.PushBack(2)
@@ -120,7 +120,7 @@ func TestDeleteElement(t *testing.T) {
 }
 
 func TestSize(t *testing.T) {
-	var l LinkedList
+	l := NewList()
 
 	for i := 0; i < 10; i++ {
 		l.PushBack(i)

@@ -8,6 +8,10 @@ type Stack struct {
 	data []string
 }
 
+func NewStack() *Stack {
+	return &Stack{}
+}
+
 func (s Stack) isEmpty() bool {
 	return len(s.data) == 0
 }
