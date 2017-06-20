@@ -1,16 +1,15 @@
 package pack
 
 import (
+	"os"
 	"testing"
 	"time"
-	"os"
 	//"fmt"
 )
 
-
-func TestMain(m *testing.M)  {
+func TestMain(m *testing.M) {
 	println("...setup goes here...")
-	result:= m.Run()
+	result := m.Run()
 	println("...teardown goes here...")
 	os.Exit(result)
 
